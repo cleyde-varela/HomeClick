@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="divisionTypes">
+        <item>Room</item>
+        <item>Bathroom</item>
+        <item>Living room</item>
+        <item>Garage</item>
+        <item>Garden</item>
+        <item>Kitchen</item>
+    </string-array>
+
+    <string-array name="deviceTypes">
+        <item>Light</item>
+        <item>Door</item>
+        <item>Thermostat</item>
+        <item>Watering area</item>
+    </string-array>
+
+    <string-array name="thermostatModes">
+        <item>Mode</item>
+        <item>Cool</item>
+        <item>Heat</item>
+        <item>Fan</item>
+    </string-array>
+
+    <string-array name="wateringModes">
+        <item>Mode</item>
+        <item>Fixed</item>
+        <item>Moving</item>
+    </string-array>
+</resources>

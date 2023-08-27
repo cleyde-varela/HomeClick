@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.watering.WateringConfig">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="587dp" />
+
+    <TextView
+        android:id="@+id/WateringTextView"
+        android:layout_width="205dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/drops"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/zero"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topGuideline" />
+
+    <SeekBar
+        android:id="@+id/WateringSeekbar"
+        android:layout_width="209dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WateringTextView"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <ImageView
+        android:id="@+id/WateringBtnBar"
+        android:layout_width="349dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/configuration_bar" />
+
+    <ImageButton
+        android:id="@+id/WateringPowerBtn"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/power_off"
+        app:layout_constraintEnd_toStartOf="@+id/WateringModeBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/WateringBtnBar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/WateringModeBtn"
+        android:layout_width="53dp"
+        android:layout_height="41dp"
+        android:entries="@array/wateringModes"
+        app:layout_constraintBottom_toBottomOf="@+id/WateringPowerBtn"
+        app:layout_constraintEnd_toStartOf="@+id/WateringScheduleBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/WateringPowerBtn"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/WateringScheduleBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:minHeight="48dp"
+        android:background="@drawable/ic_baseline_note_24"
+        app:layout_constraintBottom_toBottomOf="@+id/WateringModeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/WateringModeBtn"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/powerBtnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/off"
+        app:layout_constraintStart_toStartOf="@+id/WateringBtnBar"
+        app:layout_constraintTop_toBottomOf="@+id/WateringPowerBtn" />
+
+    <TextView
+        android:id="@+id/modeBtnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/mode"
+        app:layout_constraintStart_toStartOf="@+id/WateringModeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/WateringModeBtn" />
+
+    <TextView
+        android:id="@+id/scheduleBtnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/schedule"
+        app:layout_constraintEnd_toEndOf="@+id/WateringBtnBar"
+        app:layout_constraintTop_toBottomOf="@+id/WateringScheduleBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

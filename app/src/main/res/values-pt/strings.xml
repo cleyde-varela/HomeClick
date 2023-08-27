@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PB05 -->
+    <string name="app_name">HomeClick</string>
+    <string name="loginTitle">HomeClick</string>
+    <string name="pinHint">Pin</string>
+    <string name="enter_pin">Introduza o pin</string>
+    <string name="login_image">Imagem do login</string>
+    <string name="loginHelp">Ajuda</string>
+    <string name="loginForgotPin">Esqueceu o seu pin?</string>
+    <string name="addDivisionBtn">Adicionar Divisao</string>
+    <string name="enter_division_name">Introduza o nome da divisao</string>
+    <string name="saveDivision">Adicionar divisao</string>
+    <string name="division_type">Tipo da divisao</string>
+    <string name="add_new_division_header">Adicionar Nova Divisao</string>
+    <string name="add_new_device_header">Adicionar novo dispositivo</string>
+    <string name="enter_device_name">Introduza o nome do dipositivo</string>
+    <string name="device_type">Tipo de dispositivo</string>
+    <string name="saveDevice">Adicionar dispositivo</string>
+    <string name="off">OFF</string>
+    <string name="mode">Modo</string>
+    <string name="schedule">Rotina</string>
+    <string name="ok">OK</string>
+    <string name="addDeviceBtn">Adicionar Dispositivo</string>
+    <string name="thermo_config">Thermo config</string>
+    <string name="help_msg">Ajuda indisponivel de momento!</string>
+    <string name="pin_recovery_msg">Indisponivel de momemento!</string>
+    <string name="wrong_pin_msg">Pin incorrecto!!</string>
+    <string name="thermo_txt">15°C</string>
+    <string name="powerButton">Botão de Ligar</string>
+    <string name="moveButton">Botão de Movimento</string>
+    <string name="scheduleButton">Botão da rotina</string>
+    <string name="scheduleBtnText">Texto da rotina</string>
+    <string name="add_new_schedule">Adicionar nova rotina</string>
+    <string name="enter_schedule_name">Introduza nome da rotina</string>
+    <string name="enter_temperature">Introduza a temperatura</string>
+    <string name="enter_mode">Selecione o modo</string>
+    <string name="enter_start_time">Instroduza a hora de início</string>
+    <string name="enter_end_time">Introduza a hora final</string>
+    <string name="add_schedule">Guardar rotina</string>
+    <string name="enter_intensity">Introduza a intensidade</string>
+    <string name="zero">0 %</string>
+    />
+</resources>

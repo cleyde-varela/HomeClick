@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeClick</string>
+    <string name="loginTitle">HomeClick</string>
+    <string name="pinHint">Pin</string>
+    <string name="enter_pin">Enter pin</string>
+    <string name="login_image">Login image</string>
+    <string name="loginHelp">Help</string>
+    <string name="loginForgotPin">Forgot your pin?</string>
+    <string name="addDivisionBtn">Add Division</string>
+    <string name="enter_division_name">Enter division name</string>
+    <string name="saveDivision">Add division</string>
+    <string name="division_type">Division type</string>
+    <string name="add_new_division_header">Add New Division</string>
+    <string name="add_new_device_header">Add New Device</string>
+    <string name="enter_device_name">Enter device name</string>
+    <string name="device_type">Device Type</string>
+    <string name="saveDevice">Add device</string>
+    <string name="off">OFF</string>
+    <string name="mode">Mode</string>
+    <string name="schedule">Schedule</string>
+    <string name="ok">OK</string>
+    <string name="addDeviceBtn">Add Device</string>
+    <string name="thermo_config">Thermo config</string>
+    <string name="help_msg">Help isn\'t available yet!</string>
+    <string name="pin_recovery_msg">Pin recovery isn\'t available yet!</string>
+    <string name="wrong_pin_msg">Wrong pin!!</string>
+    <string name="thermo_txt">15ºC</string>
+    <string name="powerButton">powerB</string>
+    <string name="moveButton">moveB</string>
+    <string name="scheduleButton">scheduleB</string>
+    <string name="scheduleBtnText">scheduleBT</string>
+    <string name="add_new_schedule">Add New Schedule</string>
+    <string name="enter_schedule_name">Name</string>
+    <string name="enter_temperature">Enter Temperature</string>
+    <string name="enter_mode">Enter Mode</string>
+    <string name="enter_start_time">Enter start time</string>
+    <string name="enter_end_time">Enter end time</string>
+    <string name="add_schedule">Add schedule</string>
+    <string name="enter_intensity">Enter intensity</string>
+    <string name="zero">0 %</string>
+    />
+</resources>

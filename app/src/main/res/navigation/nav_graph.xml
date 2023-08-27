@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.homesuveilapp_pdm.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_divisions"
+            app:destination="@id/divisions" />
+    </fragment>
+    <fragment
+        android:id="@+id/divisions"
+        android:name="com.example.homesuveilapp_pdm.ui.divisions.Divisions"
+        android:label="fragment_divisions"
+        tools:layout="@layout/fragment_divisions" >
+        <action
+            android:id="@+id/action_divisions_to_divisionDevices"
+            app:destination="@id/divisionDevices" />
+        <action
+            android:id="@+id/action_divisions_to_addDivision"
+            app:destination="@id/addDivision" />
+    </fragment>
+    <fragment
+        android:id="@+id/divisionDevices"
+        android:name="com.example.homesuveilapp_pdm.ui.divisions.DivisionDevices"
+        android:label="fragment_division_devices"
+        tools:layout="@layout/fragment_division_devices" >
+        <argument
+            android:name="divisionID"
+            app:argType="long" />
+        <argument
+            android:name="divisionName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_divisionDevices_to_addDevice"
+            app:destination="@id/addDevice" />
+        <action
+            android:id="@+id/action_divisionDevices_to_thermostatConfig"
+            app:destination="@id/thermostatConfig" />
+        <action
+            android:id="@+id/action_divisionDevices_to_wateringConfig"
+            app:destination="@id/wateringConfig" />
+        <action
+            android:id="@+id/action_divisionDevices_to_camera"
+            app:destination="@id/camera" />
+        <argument
+            android:name="divisionImgUri"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDevice"
+        android:name="com.example.homesuveilapp_pdm.ui.divisions.AddDevice"
+        android:label="fragment_add_device"
+        tools:layout="@layout/fragment_add_device" >
+        <argument
+            android:name="divisionID"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDivision"
+        android:name="com.example.homesuveilapp_pdm.ui.divisions.AddDivision"
+        android:label="fragment_add_division"
+        tools:layout="@layout/fragment_add_division" />
+    <fragment
+        android:id="@+id/thermostatConfig"
+        android:name="com.example.homesuveilapp_pdm.ui.thermostat.ThermostatConfig"
+        android:label="fragment_thermostat_config"
+        tools:layout="@layout/fragment_thermostat_config" >
+        <argument
+            android:name="thermostatID"
+            app:argType="long" />
+        <argument
+            android:name="thermostatName"
+            app:argType="string" />
+        <argument
+            android:name="thermostatStatus"
+            app:argType="com.example.homesuveilapp_pdm.db.DeviceStatus" />
+        <argument
+            android:name="thermostatMode"
+            app:argType="com.example.homesuveilapp_pdm.db.ThermostatMode" />
+        <argument
+            android:name="thermostatTemp"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_thermostatConfig_to_addSchedule"
+            app:destination="@id/addSchedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/wateringConfig"
+        android:name="com.example.homesuveilapp_pdm.ui.watering.WateringConfig"
+        android:label="fragment_watering_config"
+        tools:layout="@layout/fragment_watering_config" >
+        <argument
+            android:name="wateringID"
+            app:argType="long" />
+        <argument
+            android:name="wateringName"
+            app:argType="string" />
+        <argument
+            android:name="wateringStatus"
+            app:argType="com.example.homesuveilapp_pdm.db.DeviceStatus" />
+        <argument
+            android:name="wateringMode"
+            app:argType="com.example.homesuveilapp_pdm.db.WateringMode" />
+        <argument
+            android:name="wateringItensity"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_wateringConfig_to_wateringAddSchedule"
+            app:destination="@id/wateringAddSchedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSchedule"
+        android:name="com.example.homesuveilapp_pdm.ui.thermostat.AddSchedule"
+        android:label="fragment_add_schedule"
+        tools:layout="@layout/fragment_add_schedule" >
+        <argument
+            android:name="thermostatID"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/camera"
+        android:name="com.example.homesuveilapp_pdm.ui.divisions.Camera"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <argument
+            android:name="divisionID"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/wateringAddSchedule"
+        android:name="com.example.homesuveilapp_pdm.ui.watering.WateringAddSchedule"
+        android:label="fragment_watering_add_schedule"
+        tools:layout="@layout/fragment_watering_add_schedule" >
+        <argument
+            android:name="wateringID"
+            app:argType="long" />
+    </fragment>
+</navigation>

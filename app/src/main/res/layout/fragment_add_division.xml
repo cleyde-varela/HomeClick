@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ui.divisions.AddDivision">
+
+    <TextView
+        android:id="@+id/addDivisionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_new_division_header"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/divisionNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/enter_division_name"
+        android:inputType="textPersonName"
+        android:minHeight="58dp"
+        android:minWidth="316dp"/>
+
+    <TextView
+        android:id="@+id/divisionsTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="@string/division_type"
+        />
+
+    <Spinner
+        android:id="@+id/divisionsTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/divisionTypes"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/createDeviceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:minHeight="48dp"
+        android:text="@string/saveDivision" />
+
+
+</LinearLayout>
