@@ -24,3 +24,16 @@ You can run the code on your local machine using an emulator on Android StudioðŸ
 
 ## ðŸ“Œ Take a look
 
+https://github.com/cleyde-varela/HomeClick/assets/83819524/2426585f-5dbe-4773-ae75-f7ab61fd829f
+
+https://github.com/cleyde-varela/HomeClick/assets/83819524/d858e429-32b1-4da0-be72-b2fb1c711efe
+
+https://github.com/cleyde-varela/HomeClick/assets/83819524/f3a7922a-97c8-40af-8f63-b5635ef211c7
+
+https://github.com/cleyde-varela/HomeClick/assets/83819524/9184a23c-7ea3-4a62-84d2-dc842ee8ea93
+
+https://github.com/cleyde-varela/HomeClick/assets/83819524/20863ddf-3a1d-4e89-a4a5-5f2738827b1e
+
+
+
+
