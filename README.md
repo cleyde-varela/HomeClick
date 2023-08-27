@@ -6,7 +6,7 @@ The application intends to serve as a central point for monitoring the various d
 the irrigation system, allowing the user to turn on, off, and configure any of these through their mobile device.
   
 ## 📌 The reason behind it
-This app was built in collaboration with my great colleague **Jessé Sacramento** (https://github.com/JesseSacramento01) as the final project for (I dare to say) *my favorite subject so far, Programming for Mobile Apps*.
+This app was built in collaboration with my great colleague **Jessé Sacramento** (https://github.com/JesseSacramento01) as the final project for (I dare to say) my favorite subject so far, *Programming for Mobile Apps*.
 We initially had the idea during another subject, *Person Computer Interaction* in which we elaborated on the app's analysis and design, we first drafted the screens and then using
 Balsamiq created the wireframes for the medium-fidelity design. We then implemented all the visuals using Java.
 Later, we made some modifications and improvements to the project and switched to Kotlin now implementing functionality.
