@@ -22,3 +22,5 @@ Later, we made some modifications and improvements to the project and switched t
 ## 📌 How to use it
 You can run the code on your local machine using an emulator on Android Studio👋
 
+## 📌 Take a look
+
